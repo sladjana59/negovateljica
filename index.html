@@ -39,6 +39,60 @@
   </script>
 
   <style>
+  .testimonials{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:12px;
+  margin-top:12px;
+}
+
+.testimonial{
+  padding:16px;
+  border-radius: 20px;
+  border:1px solid var(--line);
+  background: rgba(0,0,0,.16);
+  position:relative;
+}
+
+.testimonial p{
+  margin:0;
+  color: var(--muted);
+  font-size:13.5px;
+  line-height:1.6;
+}
+
+.testimonial .quote{
+  position:absolute;
+  top:10px;
+  right:14px;
+  font-size:46px;
+  opacity:.18;
+  font-weight:900;
+}
+
+.testimonial .who{
+  margin-top:12px;
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+
+.testimonial .who b{
+  font-size:13.5px;
+  color: var(--text);
+}
+
+.testimonial .who span{
+  font-size:12px;
+  color: var(--muted);
+}
+
+@media (min-width: 860px){
+  .testimonials{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
     :root{
       --bg:#070b16;
       --panel: rgba(255,255,255,.06);
@@ -379,6 +433,8 @@
         <a href="#galerija">Galerija</a>
         <a href="#faq">Pitanja</a>
         <a href="#kontakt">Kontakt</a>
+        <a href="#recenzije">Recenzije</a>
+
       </nav>
 
       <div class="cta">
@@ -631,6 +687,78 @@
         </div>
       </div>
     </section>
+<section class="section" id="recenzije">
+  <div class="wrap">
+    <h2>Recenzije</h2>
+    <p>Utisci porodica koje su koristile usluge 24h nege.</p>
+
+    <div class="testimonials">
+      <div class="testimonial">
+        <div class="quote">“</div>
+        <p>
+          Poštovana Dragana dobar dan. Evo danas konačno da Vam prenesem moj utisak o Slađani.
+          Vi znate da sam ja bila zadovoljna sa Ljiljom ali ja za Slađu ne mogu da nađem pravi izraz
+          kojim bih Vam opisala moje zadovoljstvo sa njom. Dakle žena koja zna što treba činiti u svakoj situaciji.
+          Ne treba joj nikakva pomoć. Prava njegovateljica. Jednostavno neko sa kim sam u potpunosti prezadovoljna.
+          Hvala Vam do neba što ste mi poslali Slađu. Ova dva dana Vam šaljemo novac.
+        </p>
+        <div class="who">
+          <b>Željka</b>
+          <span>porodica korisnika usluge</span>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="quote">“</div>
+        <p>
+          Slađana je izuzetno vredna, mirna i pouzdana. Sve radi samostalno, bez podsećanja.
+          Posebno nam znači što ima iskustva sa nepokretnim pacijentima i što zna kako da spreči dekubit.
+        </p>
+        <div class="who">
+          <b>Milica</b>
+          <span>Srbija</span>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="quote">“</div>
+        <p>
+          Kod nas je pacijent dijabetičar i veoma nam je bilo važno da negovateljica zna terapiju,
+          merenje šećera i insulin. Slađana je sve radila profesionalno i odgovorno. Preporuka.
+        </p>
+        <div class="who">
+          <b>Ivana</b>
+          <span>Italija</span>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="quote">“</div>
+        <p>
+          Najviše cenimo što je dostupna i noću i danju, što ustaje kada pacijent zove i što ima strpljenja.
+          Kuća je uvek uredna, veš opran, obroci pripremljeni kako treba. Za svaku preporuku.
+        </p>
+        <div class="who">
+          <b>Goran</b>
+          <span>porodica korisnika usluge</span>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="quote">“</div>
+        <p>
+          Retko se danas sreće osoba koja radi ovaj posao sa tolikom odgovornošću.
+          Slađana je bila oslonac i pacijentu i nama. Sve preporuke za 24h negu.
+        </p>
+        <div class="who">
+          <b>Vesna</b>
+          <span>Srbija</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <section class="section" id="faq">
       <div class="wrap">
